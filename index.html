@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platanitos de la Esmeralda</title>
+    <link rel="icon" href="img/iconoPestaña.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="formulario">
+        <form>
+            <h2>INICIO DE SESIÓN</h2>
+            <label for="tipoUsuario">Tipo de Usuario:</label>
+            <select class="select_user" name="tipoUsuario" id="tipoUsuario">
+                <option value="Seleccionar Tipo de Usuario">Seleccionar Tipo de Usuario</option>
+                <option value="Administrador">Administrador</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Cliente">Cliente</option>
+                <option value="Funcionario de Bodega">Funcionario de Bodega</option>
+                <option value="Funcionario de Producción">Funcionario de Producción</option>
+                <option value="Funcionario de Entrega">Funcionario de Entrega</option>
+            </select>
+            <label for="usuario">Usuario:</label>
+            <input type="text" required id="usuario" placeholder="Introduzca su Usuario">
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" required id="contraseña" placeholder="Introduzca su Contraseña">
+            <input type="submit" value="INGRESAR" id="boton">
+            <a href="views/recuperar_usuario.html">Olvidé mi usuario</a>
+        </form>
+    </div>
+
+    <!-- Modal personalizado -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-message"></p>
+            <button class="modal-button" id="modal-button">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="js/validar.js"></script>
+</body>
+</html>
